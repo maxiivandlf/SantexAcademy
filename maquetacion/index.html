@@ -1,47 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cluster 2 - X Academy</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body style="margin: 0;">
-    <div id="navbar" style="display: flex; border-bottom: 1px solid gray; padding: 14px 800px; justify-content: space-between;">
-        <div id="navbar-left">
-            <img src="technology-with-purpose.svg">
-        </div>
-        <div id="navbar-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capacitaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
-            <button>Sumate +</button>
-        </div>
-    </div>
-    <div id="contact-form">
-        <form style="margin: 0 300px;" action="">
-            <div>
-                <input type="text" placeholder="Nombre y Apellido">
-                <input type="email" placeholder="Email">
-                <select name="" id="">
-                    <option value="">Programas</option>
-                    <option value="">Capacitaciones</option>
-                </select>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cluster 1 - X Academy MaxiIvandlf</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="https://technologywithpurpose.org/wp-content/uploads/2022/10/technology-with-purpose.svg"
+        alt="logo academy"
+      />
+      <nav class="navigation">
+        <ul class="links">
+          <li class="link"><a href="">Nosotros</a></li>
+          <li class="link"><a href="">Programas</a></li>
+          <li class="link"><a href="">Capacitaciones</a></li>
+          <li class="link"><a href="">Alianzas</a></li>
+          <li class="link"><a href="">Contacto</a></li>
+          <li class="link"><a href="">Sumate</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main_content">
+        <section class="home">
+          <div class="home-top">
+            <h1 class="home-title">
+              "Somos una Fundación dedicada a mejorar la calidad de vida de las
+              personas y su entorno, a través de la tecnología.
+            </h1>
+            <div class="buttons">
+              <a class="btn_contact" href="">Contactanos -></a>
+              <a class="btn_sum" href="">Sumate +</a>
             </div>
-            <div>
-                <textarea name="" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="home-bottom">
+            <div class="container">
+              <div class="text_impacto">
+                <h2>. Impacto</h2>
+                <p>
+                  Buscamos construir alianzas y fortalecer vínculos para generar
+                  una transformación real en la comunidad. Trabajamos para
+                  acercar la tecnología innovadora y disruptiva del sector
+                  privado hacia el sector social.
+                </p>
+              </div>
+              <div class="counters">
+                <div class="couter_box">
+                  <span class="counter_number">58</span>
+                  Localidades
+                </div>
+                <div class="couter_box">
+                  <div>
+                    <span class="counter_simbol">+</span
+                    ><span class="counter_number">50</span>
+                  </div>
+                  Mentores
+                </div>
+                <div class="couter_box">
+                  <span class="counter_number">301</span>
+                  Participantes
+                </div>
+              </div>
             </div>
-            <div>
-                <button>Enviar</button>
-            </div>
-        </form>
-    </div>
-</body>
+          </div>
+        </section>
+        <section class="imagen_fondo"></section>
+      </div>
+    </main>
+  </body>
 </html>

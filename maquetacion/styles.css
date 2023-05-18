@@ -1,40 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
+:root {
+  --bg-dark-theme: #201b24;
+  --accent-color: #6b53f0;
+  --font-principal: 'Inter', sans-serif;
+  --color-font-w: #d5d5d5;
+  --color-font-B: #080808;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 html {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+  font-family: var(--font-principal);
+  font-size: 16px;
+}
+body {
+  margin: 0;
+}
+/* STYLES HEADER */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 64px;
+  background-color: #d7d7d7;
+  border-bottom: 1px solid var(--color-font-B);
 }
 
-p {
-    margin-right: 2em;
-    font-weight: bold;
-    font-size: 0.9em;
-    font-weight: 500;
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button {
-    background-color: white;
-    border-radius: 30px;
-    padding: 0px 1.5em;
-    height: 2.5em;
-    border: 2px solid black;
-    font-size: 0.8em;
-    width: 8em;
+.links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+.link a {
+  padding: 0;
+  text-decoration: none;
+  color: var(--color-font-B);
 }
 
-div#navbar-left img {
-    width: 8em;
+/* STYLES CONTENT */
+.imagen_fondo {
+  background-image: url(https://technologywithpurpose.org/wp-content/uploads/2022/11/twp-home.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  padding-top: 64px;
+  background-attachment: fixed;
+}
+
+/* STYLE CONTENT MAIN */
+
+.main_content {
+  height: 100vh;
+}
+/* Style home */
+/* --> Home top */
+.home-top {
+  height: 50vh;
+  background-color: var(--color-font-w);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-top .home-title {
+  max-width: 30%;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.home-top .buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.home-top .buttons a {
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.home-top .buttons .btn_contact {
+  border: 2px solid var(--color-font-B);
+}
+.home-top .buttons .btn_sum {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+/* --> home bottom */
+.home-bottom {
+  height: 50vh;
+  background-color: var(--bg-dark-theme);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 120px 30px 100px;
+}
+.home-bottom .container {
+  display: flex;
+  gap: 32px;
+  color: var(--color-font-w);
+}
+.container .text_impacto {
+  max-width: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.counters {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.couter_box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 300;
+}
+.counters .counter_number {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.counters .counter_simbol {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+/* STYLE WRAPPER */
+
+.p {
+  margin-right: 2em;
+  font-weight: bold;
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 @media (width >= 2500px) {
-    html {
-        font-size: 28px;
-    }
+  html {
+    font-size: 28px;
+  }
 }
 
 @media (width >= 3500px) {
-    html {
-        font-size: 32px;
-    }
+  html {
+    font-size: 32px;
+  }
 }
